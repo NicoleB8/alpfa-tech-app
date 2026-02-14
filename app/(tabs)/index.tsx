@@ -99,6 +99,7 @@ export default function HomeScreen() {
           <QuickLink href="/about" label="About ALPFA" />
           <QuickLink href="/join" label="Join" />
           <QuickLink href="/(tabs)/eboard" label="Meet the EBoard" />
+          <QuickLink href="/(tabs)/faqs" label="Go to the FAQS" />
         </ThemedView>
       </ThemedView>
     </ParallaxScrollView>
