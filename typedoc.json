@@ -3,4 +3,5 @@
 	"entryPointStrategy": "expand",
 	"out": "documentation",
 	"readme": "./documentation/README.md"
+	"githubPages": true,
 }
