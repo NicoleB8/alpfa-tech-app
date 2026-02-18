@@ -9,7 +9,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "expo lint",
-    "docs": "typedoc && start documentation/index.html"
+    "docs": "typedoc && start docs/index.html"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
