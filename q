@@ -1,0 +1,60 @@
+* [33mcommit a8acef4f74b6169e5600ea2d7b082d075c90bb41[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mtest[m[33m)[m
+[31m|[m Author: SalmonSalado <samilantonio809@gmail.com>
+[31m|[m Date:   Fri Feb 13 22:21:45 2026 -0500
+[31m|[m 
+[31m|[m     Modified the gitignore to ignore a txt file that just stores the commit history, and started adding the faqs page.
+[31m|[m 
+* [33mcommit 3d7d1423e587e4f2960c1eb6019cd5b23e882583[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+[31m|[m Author: SalmonSalado <samilantonio809@gmail.com>
+[31m|[m Date:   Fri Jan 30 15:07:22 2026 -0500
+[31m|[m 
+[31m|[m     Added a +not+found file to handle cases where the user navigates to
+[31m|[m     a URL that doesn't exist. That way, we can design the view however we
+[31m|[m     like. This is similar to a 404 error when you navigate to the incorrect
+[31m|[m     place.
+[31m|[m     
+[31m|[m     Removed modal.tsx , a modal is a kind of a popup component that can show
+[31m|[m     you something, like information. But as of currently, the file is not doing anything,
+[31m|[m     and not being used.
+[31m|[m     
+[31m|[m     In the future it can be added back, once it's gonna be used.
+[31m|[m 
+* [33mcommit ad9cfd26210eece7d5e3e506de335782db25349f[m
+[31m|[m Author: SalmonSalado <samilantonio809@gmail.com>
+[31m|[m Date:   Fri Jan 30 14:46:46 2026 -0500
+[31m|[m 
+[31m|[m     Deleted explore.tsx, it's not part of the project. It's just a
+[31m|[m     file to explain expo's functionality.
+[31m|[m 
+* [33mcommit 5d0b80297d768ffe7e9dbe56bcd7ac7279212b14[m
+[31m|[m Author: SalmonSalado <samilantonio809@gmail.com>
+[31m|[m Date:   Fri Jan 30 14:31:57 2026 -0500
+[31m|[m 
+[31m|[m     Removed README2.md, because it is not needed. We already have our own README file
+[31m|[m 
+* [33mcommit 03ac017eadaed0748cafe7f9960bb55a8d347296[m[33m ([m[1;31mupstream/main[m[33m)[m
+[31m|[m Author: Nicole B. <neb83@scarletmail.rutgers.edu>
+[31m|[m Date:   Thu Jan 29 18:20:39 2026 -0500
+[31m|[m 
+[31m|[m     Added my local project into the GitHub
+[31m|[m   
+*   [33mcommit 3c8009bb9f9888843939331216c3536f10ed553f[m
+[32m|[m[33m\[m  Merge: f2f437e fc45a8b
+[32m|[m [33m|[m Author: NicoleB8 <neb83@scarletmail.rutgers.edu>
+[32m|[m [33m|[m Date:   Tue Dec 9 23:43:14 2025 -0500
+[32m|[m [33m|[m 
+[32m|[m [33m|[m     Merge pull request #1 from SalmonSalado/readme-update
+[32m|[m [33m|[m     
+[32m|[m [33m|[m     Updating README.md file
+[32m|[m [33m|[m 
+[32m|[m * [33mcommit fc45a8b5021e7a0d6edb5ab0609f7c26d77460bf[m[33m ([m[1;32mreadme-update[m[33m)[m
+[32m|[m[32m/[m  Author: SalmonSalado <samilantonio809@gmail.com>
+[32m|[m   Date:   Fri Dec 5 22:26:35 2025 -0500
+[32m|[m   
+[32m|[m       mmm
+[32m|[m 
+* [33mcommit f2f437e76081aa541d6c2ef4ef5303304445f2d6[m
+  Author: NicoleB8 <neb83@scarletmail.rutgers.edu>
+  Date:   Tue Nov 18 23:35:59 2025 -0500
+  
+      Initial commit
