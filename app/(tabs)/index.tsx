@@ -85,6 +85,7 @@ export default function HomeScreen() {
               <MetaPill text="Business & Tech" />
               <MetaPill text="Room TBD" />
               <MetaPill text="11:30–12:00" />
+	      <MetaPill text="Experiment" />
             </View>
 
             <Link href={ROUTES.EVENTS} asChild>
