@@ -26,7 +26,7 @@ export default function HomeScreen() {
       headerBackgroundColor={{ light: "#0F2A44", dark: "#0F2A44" }}
       headerImage={
         <Image
-          source={require("../../assets/images/alpfa_logo.png")}
+          source={require("../../assets/images/alpfa_logo.webp")}
           style={styles.headerLogo}
           resizeMode="contain"
         />
@@ -51,7 +51,7 @@ export default function HomeScreen() {
         />
         <Card>
           <Image
-            source={require("../../assets/images/alpfamilia.jpg")}
+            source={require("../../assets/images/alpfamilia.webp")}
             style={styles.cardImage}
             resizeMode="cover"
           />
@@ -71,7 +71,7 @@ export default function HomeScreen() {
         />
         <Card>
           <Image
-            source={require("../../assets/images/event_flyer.png")}
+            source={require("../../assets/images/event_flyer.webp")}
             style={styles.eventImage}
             resizeMode="cover"
           />
