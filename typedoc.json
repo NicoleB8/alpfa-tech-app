@@ -1,0 +1,7 @@
+{
+	"entryPoints": ["app"],
+	"entryPointStrategy": "expand",
+	"out": "docs",
+	"readme": ["documentation/README_docs.md"], 
+	"githubPages": false,
+}

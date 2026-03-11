@@ -1,5 +1,5 @@
 
-import { Link } from "expo-router";
+import { Link , Href} from "expo-router";
 import React from "react";
 import {
   Image,
@@ -14,13 +14,19 @@ import ParallaxScrollView from "@/components/parallax-scroll-view";
 import { ThemedText } from "@/components/themed-text";
 import { ThemedView } from "@/components/themed-view";
 
+export const ROUTES = {
+	FAQ: '/(tabs)/faqs',
+	EBOARD: '/(tabs)/eboard',
+	EVENTS: '/(tabs)/events',
+} as const;
+
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: "#0F2A44", dark: "#0F2A44" }}
       headerImage={
         <Image
-          source={require("../../assets/images/alpfa_logo.png")}
+          source={require("../../assets/images/alpfa_logo.webp")}
           style={styles.headerLogo}
           resizeMode="contain"
         />
@@ -33,21 +39,19 @@ export default function HomeScreen() {
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={styles.pillsRow}
         >
-          <NavPill href="/about" label="About Us" />
-          <NavPill href="/(tabs)/eboard" label="Meet the EBoard" />
-          <NavPill href="/faq" label="FAQ" />
-          <NavPill href="/join" label="Join" />
+          <NavPill href={ROUTES.EBOARD} label="Meet the EBoard" />
+          <NavPill href={ROUTES.FAQ} label="FAQ" />
         </ScrollView>
 
         {/* Our ALPFAmilia */}
         <SectionHeader
           title="Our ALPFAmilia"
           actionLabel="See more"
-          href="/(tabs)/eboard"
+          href= {ROUTES.EBOARD}
         />
         <Card>
           <Image
-            source={require("../../assets/images/alpfamilia.jpg")}
+            source={require("../../assets/images/alpfamilia.webp")}
             style={styles.cardImage}
             resizeMode="cover"
           />
@@ -63,11 +67,11 @@ export default function HomeScreen() {
         <SectionHeader
           title="Upcoming Events"
           actionLabel="View all"
-          href="/(tabs)/events"
+          href= { ROUTES.EVENTS } 
         />
         <Card>
           <Image
-            source={require("../../assets/images/event_flyer.png")}
+            source={require("../../assets/images/event_flyer.webp")}
             style={styles.eventImage}
             resizeMode="cover"
           />
@@ -81,9 +85,10 @@ export default function HomeScreen() {
               <MetaPill text="Business & Tech" />
               <MetaPill text="Room TBD" />
               <MetaPill text="11:30–12:00" />
+	      <MetaPill text="Experiment" />
             </View>
 
-            <Link href="/(tabs)/events" asChild>
+            <Link href={ROUTES.EVENTS} asChild>
               <Pressable style={styles.primaryBtn}>
                 <ThemedText style={styles.primaryBtnText}>Select</ThemedText>
               </Pressable>
@@ -96,9 +101,8 @@ export default function HomeScreen() {
           <ThemedText type="subtitle">Quick links</ThemedText>
 
           <QuickLink href="/(tabs)/events" label="Events" />
-          <QuickLink href="/about" label="About ALPFA" />
-          <QuickLink href="/join" label="Join" />
-          <QuickLink href="/(tabs)/eboard" label="Meet the EBoard" />
+          <QuickLink href={ROUTES.EBOARD} label="Meet the EBoard" />
+          <QuickLink href={ROUTES.FAQ} label="Go to the FAQS" />
         </ThemedView>
       </ThemedView>
     </ParallaxScrollView>
@@ -107,7 +111,7 @@ export default function HomeScreen() {
 
 /** Small reusable UI components */
 
-function NavPill({ href, label }: { href: string; label: string }) {
+function NavPill({ href, label }: { href: Href; label: string }) {
   return (
     <Link href={href} asChild>
       <Pressable style={styles.pill}>
@@ -124,7 +128,7 @@ function SectionHeader({
 }: {
   title: string;
   actionLabel: string;
-  href: string;
+  href: Href;
 }) {
   return (
     <View style={styles.sectionHeaderRow}>
@@ -150,7 +154,7 @@ function MetaPill({ text }: { text: string }) {
   );
 }
 
-function QuickLink({ href, label }: { href: string; label: string }) {
+function QuickLink({ href, label }: { href: Href; label: string }) {
   return (
     <Link href={href} asChild>
       <Pressable style={styles.quickLinkRow}>

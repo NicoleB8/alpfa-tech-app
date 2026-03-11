@@ -38,6 +38,9 @@ yarn-error.*
 
 app-example
 
+# This is to ignore the commit history txt
+commit_history.txt
+
 # generated native folders
 /ios
 /android
